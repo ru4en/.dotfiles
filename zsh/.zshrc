@@ -70,8 +70,7 @@ ZSH_THEME="agnoster" # set by `omz`
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo adb battery)
-
+plugins=(git sudo adb battery docker docker-compose dotenv golang pip python rust rustup ssh-agent systemd tmux tmuxinator vagrant virtualenv virtualenvwrapper vscode zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -95,9 +94,12 @@ fi
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
+
+# Load All Aliases
+source ~/.aliases.sh
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /home/ru4en/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/ru4en/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

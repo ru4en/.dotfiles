@@ -39,9 +39,12 @@ else
     exit 1
 fi
 
-ln -sf vim/vimrc ~/.vimrc
-ln -sf zsh/zshrc ~/.zshrc
-# ln -sf tmux/tmux.conf ~/.tmux.conf
+# Stow dotfiles
+stow -t ~ git
+stow -t ~ vim
+stow -t ~ tmux
+stow -t ~ zsh
+
 
 # Install Vim Plug
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
