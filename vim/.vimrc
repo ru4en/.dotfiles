@@ -178,3 +178,8 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
+
+" Spell checking onlly for markdown and text files
+autocmd FileType markdown,text setlocal spell
+
+

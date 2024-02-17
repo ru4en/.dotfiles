@@ -21,6 +21,13 @@ get_package_manager() {
     fi
 }
 
+
+# Stow dotfiles
+stow -t ~ git
+stow -t ~ vim
+stow -t ~ tmux
+stow -t ~ zsh
+
 # Install dependencies
 package_manager=$(get_package_manager)
 packages="git zsh vim tmux curl cmake gcc-c++ make python3-devel"
@@ -39,13 +46,6 @@ else
     exit 1
 fi
 
-# Stow dotfiles
-stow -t ~ git
-stow -t ~ vim
-stow -t ~ tmux
-stow -t ~ zsh
-
-
 # Install Vim Plug
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
     curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -53,7 +53,5 @@ if [ ! -f ~/.vim/autoload/plug.vim ]; then
 fi
 
 # Install Oh My Zsh
-if [ ! -d ~/.oh-my-zsh ]; then
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
