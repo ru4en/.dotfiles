@@ -30,6 +30,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'Valloric/YouCompleteMe'
+    Plug 'kamykn/spelunker.vim'
+    Plug 'kamykn/popup-menu.nvim'
+
 call plug#end()
 
 let g:ale_completion_enabled = 1
@@ -179,7 +182,27 @@ let g:lightline = {
       \ },
       \ }
 
-" Spell checking onlly for markdown and text files
-autocmd FileType markdown,text setlocal spell
+" Spell checking 
+let g:enable_spelunker_vim = 1
+let g:enable_spelunker_vim_on_readonly = 0
+
+" pineapple
+
+nnoremap <silent> <C-s> :call spelunker#correct_from_list()<CR>
+nnoremap <silent> <C-a> :call spelunker#check()<CR>
+
+" Vim key mappings
+nnoremap <C-p> :NERDTreeToggle<CR>     " Open/close file explorer
+nnoremap <C-f> :Rg<Space>               " Search files using ripgrep
+nnoremap <C-s> :w<CR>                   " Save file
+nnoremap <C-q> :q<CR>                   " Close file
+nnoremap <C-z> :undo<CR>                " Undo
+nnoremap <C-y> :redo<CR>                " Redo
+nnoremap <C-c> "+y                     " Copy to system clipboard
+nnoremap <C-v> "+p                     " Paste from system clipboard
+
+highlight SpelunkerSpellBad cterm=underline ctermfg=247 gui=underline guifg=#ff0000
+highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=NONE gui=underline guifg=NONE
+
 
 

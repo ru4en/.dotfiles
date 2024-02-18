@@ -81,6 +81,8 @@ alias dcb='docker-compose build'
 # !!
 alias please='sudo !!'
 
+# Vim
+alias vim='vim -p'
 
 
 
