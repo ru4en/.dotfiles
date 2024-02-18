@@ -54,6 +54,9 @@ fi
 
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm ~/.zshrc
+stow -t ~ zsh
+
 
 # Install ZSH plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
