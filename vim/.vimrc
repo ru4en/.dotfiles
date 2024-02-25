@@ -204,5 +204,9 @@ nnoremap <C-v> "+p                     " Paste from system clipboard
 highlight SpelunkerSpellBad cterm=underline ctermfg=247 gui=underline guifg=#ff0000
 highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=NONE gui=underline guifg=NONE
 
-
+" Ignore case for write and quit commands
+cnoreabbrev WQ wq
+cnoreabbrev Wq wq
+cnoreabbrev W w
+cnoreabbrev Q q
 

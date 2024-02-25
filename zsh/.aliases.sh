@@ -30,8 +30,8 @@ alias mkdir='mkdir -pv'
 alias diff='colordiff'
 
 # Command History
-alias h='history'
-alias hg='history | grep'
+#alias h='history'
+#alias hg='history | grep'
 
 # Jobs
 alias j='jobs -l'
