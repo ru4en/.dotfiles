@@ -16,7 +16,6 @@ fi
 # Load All Aliases
 source ~/.aliases.sh
 
-
 # Load All Functions
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

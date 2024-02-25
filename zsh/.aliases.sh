@@ -29,10 +29,6 @@ alias mkdir='mkdir -pv'
 # Colored Diff
 alias diff='colordiff'
 
-# Command History
-#alias h='history'
-#alias hg='history | grep'
-
 # Jobs
 alias j='jobs -l'
 
