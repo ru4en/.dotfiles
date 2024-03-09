@@ -1,4 +1,4 @@
-# .dotfiles
+#  Dotfiles And Setup
 
 # Installation
 
@@ -21,4 +21,4 @@
 ```
 
 ## Scripts
-    - auto-logout-key
+- [auto-logout-key](https://github.com/ru4en/.dotfiles/tree/main/scripts/auto-logout-key)
