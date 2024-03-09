@@ -1,0 +1,1 @@
+ACTION=="remove", SUBSYSTEM=="usb", ENV{PRODUCT}=="1050/402/543", RUN+="/usr/bin/loginctl lock-sessions"

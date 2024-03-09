@@ -1,0 +1,9 @@
+[Unit]
+Description=Lock screen on yubikey removal
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/loginctl lock-sessions
+
+[Install]
+WantedBy=multi-user.target
