@@ -4,7 +4,7 @@
 Bunch of scripts and configuration files for my personal use.
 
 ## scripts/auto-logout-key
-    Scripts and configuration files to automatically lock the screen when yubikey is removed.
+Scripts and configuration files to automatically lock the computer when yubikey is removed.
 
 ### Usage
 setup:
