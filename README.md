@@ -47,6 +47,20 @@
 ```
 go to [github](https://github.com/settings/keys) and add the key.
 
+## Nvidia Graphics Settings
+
+Use [EnvyControl](https://github.com/bayasdev/envycontrol) for fixing graphics ishues such as screen tairing.
+
+
+- Enable the repository with `sudo dnf copr enable sunwire/envycontrol`
+- `sudo dnf install python3-envycontrol`
+
+Set graphics mode to nvidia, enable ForceCompositionPipeline and Coolbits with a value of 24:
+```
+sudo envycontrol -s nvidia --force-comp --coolbits 24
+```
+
+
 ## Gnome Extensions
 
 - [Resource Monitor](https://extensions.gnome.org/extension/1634/resource-monitor/)
