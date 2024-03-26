@@ -1,0 +1,61 @@
+# Description: This file contains the list of packages that needs to be installed on the system.
+#
+#
+vim:
+    package_manager:
+      apt:
+        - vim
+      dnf:
+        - vim
+    version: latest
+    post_requisites:
+      - pass_command: echo "vim installed"
+      - fail_command: echo "vim installation failed"
+
+git:
+    package_manager:
+      apt:
+        - git
+      dnf:
+        - git
+    version: latest
+    post_requisites:
+      - pass_command: echo "git installed"
+      - fail_command: echo "git installation failed"
+
+  python:
+    package_manager:
+      apt:
+        - python3
+      dnf:
+        - python3
+    version: latest
+    post_requisites:
+      - pass_command: echo "python installed"
+      - fail_command: echo "python installation failed"
+
+  pip:
+    package_manager:
+      apt:
+        - python3-pip
+      dnf:
+        - python3-pip
+    version: latest
+    post_requisites:
+      - pass_command: echo "pip installed"
+      - fail_command: echo "pip installation failed"
+
+  docker:
+    package_manager:
+      apt:
+        - docker
+      dnf:
+        - docker
+    version: latest
+    pre_requisites:
+      - command: :wq
+
+    post_requisites:
+      - pass
+
+
