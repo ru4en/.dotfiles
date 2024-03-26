@@ -1,0 +1,16 @@
+[legacy/keybindings]
+zoom-in='<Primary><Alt>equal'
+zoom-out='<Primary><Alt>minus'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(58,48,24)'
+background-transparency-percent=9
+bold-is-bright=false
+cursor-blink-mode='on'
+font='ShureTechMono Nerd Font Mono 12'
+foreground-color='rgb(131,148,150)'
+palette=['rgb(41,20,4)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(128,63,19)', 'rgb(211,54,130)', 'rgb(35,121,114)', 'rgb(238,232,213)', 'rgb(86,80,76)', 'rgb(28,14,8)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+use-system-font=false
+use-theme-colors=true
+use-transparent-background=false
+visible-name='RLAB'
