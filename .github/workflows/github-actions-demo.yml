@@ -1,0 +1,19 @@
+name: GitHub Actions Demo
+on:
+  push:
+jobs:
+  Explore-GitHub-Actions:
+    name: ${{ github.actor }} is testing out GitHub Actions 🚀
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git zsh vim tmux curl cmake build-essential python3-dev stow
+      - name: Run setup script
+        run: bash ./setup.sh
+
