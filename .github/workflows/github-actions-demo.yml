@@ -1,11 +1,24 @@
-
-
 name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      run: apt-get update && apt-get install -y git zsh vim tmux curl cmake build-essential python3-dev
-      run: bash ./setup.sh
+      - name: Display Actor
+        run: echo "TRIGGERED BY: ${{ github.actor }}"
+      - name: Display Repository
+        run: echo "REPOSITORY: ${{ github.repository }}"
+      - name: Display Branch
+        run: echo "BRANCH: ${{ github.ref }}"
+      - name: Display Runner OS
+        run: echo "RUNNING ON: ${{ runner.os }}"
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git zsh vim tmux curl cmake build-essential python3-dev
+      - name: Run setup script
+        run: bash ./setup.sh
+
