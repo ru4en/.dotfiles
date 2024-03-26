@@ -21,6 +21,10 @@ get_package_manager() {
     fi
 }
 
+if [ ! -x "$(command -v stow)" ]; then
+    echo "GNU Stow is required to run this script"
+    exit 1
+fi
 
 # Stow dotfiles
 stow -t ~ git
