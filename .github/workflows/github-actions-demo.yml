@@ -8,22 +8,6 @@ jobs:
     name: ${{ github.actor }} is testing out GitHub Actions 🚀
     runs-on: ubuntu-latest
     steps:
-      - name: Set up the workflow
-        run: echo "🔧 The workflow is now being set up."
-        run: echo "TRIGGERED BY: ${{ github.actor }} 🚀"
-        run: echo "RUNNING ON: ${{ runner.os }} 🐧"
-        run: echo "REPOSITORY: ${{ github.repository }} 📚"
-        run: echo "BRANCH: ${{ github.ref }} 🔖"
-        run: echo "EVENT: ${{ github.event_name }} 📡"
-        run: echo "WORKFLOW: ${{ github.workflow }} 🧩"
-        run: echo "ACTION: ${{ github.action }} 🏃"
-        run: echo "RUN NUMBER: ${{ github.run_number }} 🚦"
-        run: echo "EVENT PATH: ${{ github.event_path }} 📂"
-        run: echo "WORKSPACE: ${{ github.workspace }} 🏗️"
-        run: echo "SHA: ${{ github.sha }} 🔒"
-        run: echo "HEAD REF: ${{ github.head_ref }} 📌"
-        run: echo "BASE REF: ${{ github.base_ref }} 📌"
-        run: echo "SERVER URL: ${{ github.server_url }} 🌐"
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
