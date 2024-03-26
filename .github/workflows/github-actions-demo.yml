@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y git zsh vim tmux curl cmake build-essential python3-dev
+          sudo apt-get install -y git zsh vim tmux curl cmake build-essential python3-dev stow
       - name: Run setup script
         run: bash ./setup.sh
 
