@@ -19,3 +19,11 @@ source ~/.aliases.sh
 # Load All Functions
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+eval "$(atuin init zsh)"
+
+# Export PATH for programing languages
+
+# Go
+export PATH=$PATH:/usr/local/go/bin
+

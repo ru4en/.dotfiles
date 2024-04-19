@@ -60,6 +60,8 @@ Set graphics mode to nvidia, enable ForceCompositionPipeline and Coolbits with a
 sudo envycontrol -s nvidia --force-comp --coolbits 24
 ```
 
+# Shit I need to remeber when i break my work env again.
+
 
 ## Gnome Extensions
 

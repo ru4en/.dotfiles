@@ -4,7 +4,7 @@ alias ll='eza -alF --icons --color=always --group-directories-first'
 alias la='eza -a --icons --color=always --group-directories-first'
 alias l='eza -F --icons --color=always --group-directories-first'
 alias l.='eza -a | egrep "^\."'
-
+alias sl='ls'
 # Network Port Listing
 alias ports='sudo netstat -tulpn | grep LISTEN'
 
@@ -80,5 +80,11 @@ alias please='sudo !!'
 # Vim
 alias vim='vim -p'
 
+# Bat
+alias car='bat'
+alias cat='bat --style=plain' 
+
+# Disk Usage
+alias du='du -h'
 
 
