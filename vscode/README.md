@@ -26,6 +26,8 @@ bierner.markdown-preview-github-styles
 
 vscodevim.vim
 
+ritwickdey.LiveServer
+
 ### Copilot
 
 GitHub.copilot
