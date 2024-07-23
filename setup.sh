@@ -21,20 +21,9 @@ get_package_manager() {
     fi
 }
 
-if [ ! -x "$(command -v stow)" ]; then
-    echo "GNU Stow is required to run this script"
-    exit 1
-fi
-
-# Stow dotfiles
-stow -t ~ git
-stow -t ~ vim
-stow -t ~ tmux
-stow -t ~ zsh
-
 # Install dependencies
 package_manager=$(get_package_manager)
-packages="git zsh vim tmux curl cmake gcc-c++ make python3-devel"
+packages="git zsh vim tmux curl cmake gcc-c++ make python3-devel stow"
 
 if [ "$package_manager" = "apt" ]; then
     sudo apt update
@@ -49,6 +38,17 @@ else
     echo "Unknown package manager"
     exit 1
 fi
+
+if [ ! -x "$(command -v stow)" ]; then
+    echo "GNU Stow is required to run this script"
+    exit 1
+fi
+
+# Stow dotfiles
+stow -t ~ git
+stow -t ~ vim
+stow -t ~ tmux
+stow -t ~ zsh
 
 # Install Vim Plug
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
