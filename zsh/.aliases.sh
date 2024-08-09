@@ -8,13 +8,23 @@ alias sl='ls'
 # Network Port Listing
 alias ports='sudo netstat -tulpn | grep LISTEN'
 
-# Package Management (for Fedora)
+# Package Management
+alias pkg="$PACKAGE_MANAGER"
 alias dnf='sudo dnf'
-alias apt='sudo dnf'
+alias apt='sudo apt'
 
 # Clearing the Terminal
 alias c='clear'
 alias clc='clear'
+
+# Exiting the term
+alias q=safe_exit
+alias :q=safe_exit
+alias q\!='exit'
+alias :q!='exit'
+alias wq='exit'
+alias :wq='exit'
+alias x=safe_exit
 
 # System Operations
 alias reboot='sudo reboot'
@@ -87,4 +97,5 @@ alias cat='bat --style=plain'
 # Disk Usage
 alias du='du -h'
 
-
+# Copy to clipboard
+alias ccp='xclip -selection clipboard <'

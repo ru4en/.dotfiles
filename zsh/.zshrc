@@ -1,6 +1,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# Package Manager
+
+export PACKAGE_MANAGER="=PM="
+
 ZSH_THEME="agnoster" # set by `omz`
 source $ZSH/oh-my-zsh.sh
 
