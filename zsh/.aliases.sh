@@ -72,7 +72,7 @@ alias gid='git log --all --decorate --oneline --graph'
 alias git-dog='git log --all --decorate --oneline --graph'
 
 # SSH Agent
-alias token='eval `ssh-agent` && ssh-add ~/.ssh/id_ed25519'
+alias token='eval `ssh-agent` && ssh-add ~/.ssh/id_rsa'
 
 # Docker
 alias dockerun='docker run -it --volume "$(pwd):$(pwd)" ubuntu:latest'
