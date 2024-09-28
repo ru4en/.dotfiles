@@ -32,7 +32,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'Valloric/YouCompleteMe'
     Plug 'kamykn/spelunker.vim'
     Plug 'kamykn/popup-menu.nvim'
-
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
 call plug#end()
 
 let g:ale_completion_enabled = 1
@@ -123,13 +124,13 @@ try
 catch
 endtry
 
-" Tab navigation mappings
+" Tab navigation mappings (Ctrl + PageUp/PageDown)
 nnoremap <C-PageUp> :tabprev<CR>
 nnoremap <C-PageDown> :tabnext<CR>
 nnoremap <C-S-PageUp> :tabm -1<CR>
 nnoremap <C-S-PageDown> :tabm +1<CR>
 
-" Terminal toggle function
+" Terminal toggle function (F1, Ctrl-t)
 let s:term_buf_nr = -1
 function! s:ToggleTerminal() abort
     if s:term_buf_nr == -1
@@ -151,13 +152,16 @@ endfunction
 noremap <silent> <C-t> :call <SID>ToggleTerminal()<CR>
 tnoremap <silent> <C-t> <C-w>N:call <SID>ToggleTerminal()<CR>
 
-noremap <silent> <F3> :call <SID>ToggleTerminal()<CR>
-tnoremap <silent> <F3> <C-w>N:call <SID>ToggleTerminal()<CR>
+noremap <silent> <F1> :call <SID>ToggleTerminal()<CR>
+tnoremap <silent> <F1> <C-w>N:call <SID>ToggleTerminal()<CR>
+
+" Make (F5)
+noremap <silent> <F5> :make<CR>
 
 " Disable error bells
 set noerrorbells
 
-" Function to toggle NERDTree
+" Function to toggle NERDTree (F2 and Ctrl-f)
 function! ToggleNERDTree()
   if &filetype == 'nerdtree'
     bd!
@@ -181,6 +185,9 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
+
+" toggle Fuzzy Finder (F3)
+noremap <silent> <F3> :FZF<CR>
 
 " Spell checking 
 let g:enable_spelunker_vim = 1

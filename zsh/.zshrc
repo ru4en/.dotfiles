@@ -32,10 +32,6 @@ eval "$(atuin init zsh)"
 if [ "$TMUX" = "" ]; then tmux; fi
 
 
-# Export PATH for programing languages
-# Go
-export PATH=$PATH:/usr/local/go/bin
-
 
 PATH="/home/ru4en/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/ru4en/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
@@ -43,5 +39,16 @@ PERL_LOCAL_LIB_ROOT="/home/ru4en/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_R
 PERL_MB_OPT="--install_base \"/home/ru4en/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/ru4en/perl5"; export PERL_MM_OPT;
 
-. "$HOME/.atuin/bin/env"
-export GOPATH=$HOME/go
+# Export PATH for programing languages and tools
+
+# NVim
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
+# GO
+export PATH=$PATH:/usr/local/go/bin
+
+# Conda
+export PATH="$HOME/miniconda3/bin:$PATH"
+
+# PY env
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'

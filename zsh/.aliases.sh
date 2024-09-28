@@ -13,6 +13,10 @@ alias pkg="$PACKAGE_MANAGER"
 alias dnf='sudo dnf'
 alias apt='sudo apt'
 
+# Package Management (for Fedora)
+#alias dnf='sudo dnf'
+#alias apt='sudo dnf'
+
 # Clearing the Terminal
 alias c='clear'
 alias clc='clear'
