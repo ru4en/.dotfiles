@@ -1,12 +1,5 @@
 #  Dotfiles And Setup
 
-# Installation
-
-```bash
-    git clone git@github.com:ru4en/.dotfiles.git
-    cd .dotfiles
-    ./setup.sh
-```
 
 ## Dependencies
 
@@ -18,6 +11,14 @@
 ### Fedora Dependencies
 ```bash
     sudo dnf install git zsh vim tmux curl cmake gcc-c++ make python3-devel
+```
+
+## Installation
+
+```bash
+    git clone git@github.com:ru4en/.dotfiles.git
+    cd .dotfiles
+    ./setup.sh
 ```
 
 ## Scripts
