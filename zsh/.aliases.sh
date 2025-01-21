@@ -1,5 +1,4 @@
 # List Aliases with Icons and Color
-alias ls='eza --icons --color=always --group-directories-first'
 alias ll='eza -alF --icons --color=always --group-directories-first' 
 alias la='eza -a --icons --color=always --group-directories-first'
 alias l='eza -F --icons --color=always --group-directories-first'

@@ -29,7 +29,7 @@ setxkbmap -option caps:swapescape
 
 eval "$(atuin init zsh)"
 
-if [ "$TMUX" = "" ]; then tmux; fi
+# if [ "$TMUX" = "" ]; then tmux; fi
 
 
 
