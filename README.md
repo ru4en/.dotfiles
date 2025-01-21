@@ -10,7 +10,7 @@
 
 ### Fedora Dependencies
 ```bash
-    sudo dnf install git zsh vim tmux curl cmake gcc-c++ make python3-devel
+    sudo dnf install git zsh vim tmux curl cmake gcc-c++ make python3-devel g++ python3-dev stow
 ```
 
 ## Installation
