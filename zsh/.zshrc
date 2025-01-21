@@ -25,7 +25,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Swap Caps Lock and Escape Keys (For Vim)
-setxkbmap -option caps:swapescape
+# setxkbmap -option caps:swapescape
 
 #eval "$(atuin init zsh)"
 
