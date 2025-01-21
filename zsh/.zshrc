@@ -27,11 +27,9 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Swap Caps Lock and Escape Keys (For Vim)
 setxkbmap -option caps:swapescape
 
-eval "$(atuin init zsh)"
+#eval "$(atuin init zsh)"
 
 # if [ "$TMUX" = "" ]; then tmux; fi
-
-
 
 PATH="/home/ru4en/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/ru4en/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
