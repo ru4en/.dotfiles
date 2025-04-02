@@ -23,7 +23,7 @@ get_package_manager() {
 
 # Install dependencies
 package_manager=$(get_package_manager)
-packages="git zsh vim tmux curl cmake gcc-c++ make python3-devel stow"
+packages="git zsh vim tmux curl cmake make stow"
 
 if [ "$package_manager" = "apt" ]; then
     sudo apt update
