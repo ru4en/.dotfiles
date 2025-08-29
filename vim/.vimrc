@@ -29,7 +29,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'airblade/vim-gitgutter'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    Plug 'Valloric/YouCompleteMe'
+    Plug 'ycm-core/YouCompleteMe'
     Plug 'kamykn/spelunker.vim'
     Plug 'kamykn/popup-menu.nvim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

@@ -24,10 +24,10 @@ source ~/.aliases.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Swap Caps Lock and Escape Keys (For Vim)
+# Swap Caps Lock and Escape Keys (For Vim) # Switch to wayland
 # setxkbmap -option caps:swapescape
 
-#eval "$(atuin init zsh)"
+# eval "$(atuin init zsh)"
 
 # if [ "$TMUX" = "" ]; then tmux; fi
 
@@ -43,7 +43,7 @@ PERL_MM_OPT="INSTALL_BASE=/home/ru4en/perl5"; export PERL_MM_OPT;
 export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # GO
-export PATH=$PATH:/usr/local/go/bin
+export PATH="$HOME/go/bin:$PATH"
 
 # Conda
 export PATH="$HOME/miniconda3/bin:$PATH"
