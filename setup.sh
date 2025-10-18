@@ -49,6 +49,7 @@ stow -t ~ git
 stow -t ~ vim
 stow -t ~ tmux
 stow -t ~ zsh
+stow -t ~/.config/ghostty/config ghostty
 
 # Install Vim Plug
 if [ ! -f ~/.vim/autoload/plug.vim ]; then
@@ -63,6 +64,11 @@ stow -t ~ zsh
 
 # Set Package Manager for Alias
 sed -i "s|=PM=|$package_manager|g" ~/.zshrc
+
+# Install ghostty (fedora)
+# Make this dynamic and desktop env only 
+dnf copr enable scottames/ghostty
+dnf install ghostty
 
 # Install ZSH plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting

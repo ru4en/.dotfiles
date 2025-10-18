@@ -86,6 +86,7 @@ alias dockerrm='docker rm $(docker ps -a -q)'
 # Docker Compose
 alias dc='docker-compose'
 alias dcb='docker-compose build'
+alias dkys='docker stop "$(docker ps -aq)" && docker rm "$(docker ps -aq)"'
 
 # !!
 alias please='sudo !!'
@@ -102,3 +103,6 @@ alias du='du -h'
 
 # Copy to clipboard
 alias ccp='xclip -selection clipboard <'
+
+# python venv
+alias 'activate'='source .venv/bin/activate'

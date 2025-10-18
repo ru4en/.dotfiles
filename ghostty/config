@@ -1,0 +1,8 @@
+theme = TokyoNight Night
+cursor-style = block
+cursor-style-blink = true
+cursor-opacity = 1.0
+adjust-cursor-height = 2
+adjust-cursor-thickness = 10
+cursor-click-to-move = true
+
