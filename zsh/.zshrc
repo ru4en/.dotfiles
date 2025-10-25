@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# So ghostty works?
+export TERM=xterm-256color
+
 # Package Manager
 
 export PACKAGE_MANAGER="=PM="

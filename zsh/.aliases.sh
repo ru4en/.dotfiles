@@ -95,8 +95,8 @@ alias please='sudo !!'
 alias vim='vim -p'
 
 # Bat
-alias car='bat'
-alias cat='bat --style=plain' 
+alias car='batcat'
+alias cat='batcat --style=plain' 
 
 # Disk Usage
 alias du='du -h'
