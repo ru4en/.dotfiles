@@ -3,12 +3,12 @@
 
 <div style="display: flex; flex-wrap: wrap; gap: 5px;">
 
-<img src="ss_1.png" alt="Rice for flex" style="max-width: 32%; height: auto;">
+<img src="docs/assets/ss_1.png" alt="Rice for flex" style="max-width: 32%; height: auto;">
 
 
-<img src="ss_2.png" alt="Rice for flex" style="max-width: 32%; height: auto;">
+<img src="docs/assets/ss_2.png" alt="Rice for flex" style="max-width: 32%; height: auto;">
 
-<img src="ss_3.png" alt="Rice for flex" style="max-width: 32%; height: auto;">
+<img src="docs/assets/ss_3.png" alt="Rice for flex" style="max-width: 32%; height: auto;">
 
 </div>
 
@@ -28,6 +28,12 @@ sudo dnf install git zsh vim tmux curl cmake gcc-c++ make python3-devel g++ pyth
 ```
 
 ## Installation
+
+``` bash
+
+    curl https://github.com/ru4en/.dotfiles/init.sh | sudo bash
+
+```
 
 ```bash
     git clone git@github.com:ru4en/.dotfiles.git
